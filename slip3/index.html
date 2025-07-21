@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Master Form</title>
+  <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+
+    <h2>Patient Master Form</h2>
+    <form id="patientForm" onsubmit="return validateForm()">
+        <label>Patient ID:
+            <input type="text" id="patientId">
+            <div class="error" id="patientIdError"></div>
+        </label>
+
+        <label>Patient Name:
+            <input type="text" id="patientName">
+            <div class="error" id="patientNameError"></div>
+        </label>
+
+        <label>Address:
+            <textarea id="address" rows="3"></textarea>
+            <div class="error" id="addressError"></div>
+        </label>
+
+        <label>City:
+            <input type="text" id="city">
+            <div class="error" id="cityError"></div>
+        </label>
+
+        <label>Contact Number:
+            <input type="text" id="contact">
+            <div class="error" id="contactError"></div>
+        </label>
+
+        <label>Date of Birth:
+            <input type="date" id="dob">
+            <div class="error" id="dobError"></div>
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+</html>
